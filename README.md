@@ -49,7 +49,6 @@ Technologies Used :
 PHP: Used for server-side logic.
 JavaScript: For dynamic behavior on the client side.
 HTML/CSS: For the structure and styling of the pages.
-MySQL: Database to store user and service information.
 Bootstrap: CSS framework for building responsive designs.
 
 How to Use: 
