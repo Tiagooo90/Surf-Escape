@@ -1,4 +1,5 @@
 Surf Escape 🌊
+
 Surf Escape is my first web application aimed at the surfing community, offering information about surf services, weather forecasts, popular surf spots, and more.
 
 Table of Contents
@@ -10,13 +11,13 @@ How to Use
 Contributing
 License
 
-Description
+Description :
 Surf Escape is a platform that provides a centralized experience for surfers and surfing enthusiasts. The application allows users to access information about surf schools, board rentals, wave forecasts, and other relevant services.
 
-Features
+Features :
 Many types of offers, from equipment rental to events at the surf villa.
 
-Installation
+Installation :
 Prerequisites
 Make sure you have the following tools installed on your system:
 
@@ -43,14 +44,16 @@ Server Setup
 Make sure XAMPP is correctly set up and running the Apache server.
 Place the project folder inside the htdocs folder of XAMPP to access it locally.
 
-Technologies Used
+Technologies Used :
+
 PHP: Used for server-side logic.
 JavaScript: For dynamic behavior on the client side.
 HTML/CSS: For the structure and styling of the pages.
 MySQL: Database to store user and service information.
 Bootstrap: CSS framework for building responsive designs.
 
-How to Use
+How to Use: 
+
 Access the site locally: Ensure XAMPP is running, then go to http://localhost/SurfScape in your browser.
 Browse services: Explore features like surf forecasts and surf services through the main menu.
 Manage Account: Create an account, set your surf preferences, and access personalized services.
