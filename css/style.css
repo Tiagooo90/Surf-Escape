@@ -1,0 +1,456 @@
+
+
+/* Importando fontes adequadas ao tema de surf */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@1,400;1,500&family=Original+Surfer&family=Poppins:wght@300&family=Raleway:wght@500&display=swap');
+
+/* Títulos */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Original Surfer', cursive; /* Fonte para títulos */
+    color: rgb(29, 102, 236); /* Azul vibrante que remete ao mar */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+/* Navbar */
+#headerNav {
+    background-color: #FFFF; /* Branco para um visual limpo e fresco */
+    border-bottom: 2px solid #007ACC; /* Azul vibrante para um toque de cor */
+}
+
+#headerNav .nav-link {
+    font-family: 'Lobster', cursive; /* Fonte para links da navbar */
+    color: #000; /* Preto para o texto da navbar */
+    padding: 15px 20px;
+    transition: color 0.3s ease-in-out;
+}
+
+#headerNav .nav-link:hover {
+    color: #FFD700; /* Amarelo ouro para o efeito de hover */
+}
+
+/* Efeito de Hover em Links */
+a {
+    color: #004F73; /* Azul profundo relacionado ao oceano */
+    position: relative;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+a::before {
+    background: #FFD700; /* Amarelo ouro para o efeito de hover */
+    content: "";
+    inset: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease-in-out;
+    z-index: -1;
+}
+
+a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+a:hover {
+    color: #181515; /* Cor escura para um contraste acentuado no hover */
+    transform: rotate(3deg); /* Pequena rotação para efeito dinâmico */
+}
+
+/* Animação suave em elementos ao aparecer na tela */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+/* Ajustando estilo geral da galeria */
+.gallery {
+    background-color: #E0F7FA; /* Fundo azul claro, remetendo ao céu e ao mar */
+}
+
+img {
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.05); /* Leve zoom no hover */
+}
+
+/* Logo */
+.surfescapelogo {
+    margin-left: 30px;
+}
+
+/* GALLERY */
+.gallery { 
+    background-color: #ffffff; /* Fundo branco */
+}
+
+img {
+    max-width: 100%;
+}
+
+.gallery img {
+    background-color: #dbddf1; /* Azul claro */
+    padding: 15px;
+    width: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+#gallery-modal .modal-img {
+    width: 100%;
+}
+
+.gallery-item {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+/* Footer */
+#footer {
+    border-top: 2px solid #0000002d;
+    margin-top: 50px;
+}
+
+.footer-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-links a {
+    margin: 0 10px;
+    color: #555;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #000;
+}
+
+.footer-basic {
+    padding: 40px 0;
+    background-color: #ffffff; /* Fundo branco */
+    color: black;
+}
+
+.footer-basic ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.footer-basic li {
+    padding: 0 10px;
+}
+
+.footer-basic ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer-basic ul a:hover {
+    opacity: 1;
+}
+
+.footer-basic .social {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.footer-basic .social > a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin: 0 8px;
+    color: inherit;
+    opacity: 0.75;
+}
+
+.footer-basic .social > a:hover {
+    opacity: 0.7;
+}
+
+.footer-basic .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: black;
+    margin-bottom: 0;
+}
+
+/* School Section */
+#school {
+    padding-bottom: 50px;
+}
+
+/* Section Headers */
+section h2 {
+    font-family: 'Lobster', cursive;
+    color: #30A2FF;
+    text-align: center;
+    padding-bottom: 50px;
+    transition: 0.6s;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+section:hover h2 {
+    padding-left: 50px;
+    transition: 0.6s;
+    color: black;
+}
+
+section p, h4 {
+    text-align: justify;
+    font-family: 'Raleway', sans-serif;
+}
+
+h5 {
+    padding-left: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+    font-family: 'Lobster', cursive;
+}
+
+/* TABS */
+h1 {
+    padding: 50px 0;
+    font-weight: 400;
+    text-align: center;
+}
+
+.packs {
+    margin: 0 0 20px;
+    line-height: 1.5;
+}
+
+main {
+    min-width: 320px;
+    max-width: 1000px;
+    padding: 50px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+#content1,
+#content2,
+#content3,
+#content4,
+#content5,
+#content6 {
+    display: none;
+    padding: 20px 0 0;
+    border-top: 1px solid #ddd;
+}
+
+input {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 15px 10px;
+    font-weight: 600;
+    text-align: center;
+    color: #bbb;
+    border: 1px solid transparent;
+    white-space: nowrap;
+}
+
+label:before {
+    font-family: fontawesome;
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+label[for*='1']:before,
+label[for*='2']:before,
+label[for*='3']:before,
+label[for*='4']:before,
+label[for*='5']:before,
+label[for*='6']:before {
+    content: '\f16b';
+}
+
+label:hover {
+    color: #888;
+    cursor: pointer;
+}
+
+input:checked + label {
+    color: #555;
+    border: 1px solid #ddd;
+    border-top: 2px solid rgb(161, 204, 209);
+    border-bottom: 1px solid #fff;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4,
+#tab5:checked ~ #content5,
+#tab6:checked ~ #content6 {
+    display: block;
+}
+
+@media screen and (max-width: 650px) {
+    label {
+        font-size: 0;
+    }
+
+    label:before {
+        margin: 0;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    label {
+        padding: 15px;
+    }
+}
+
+/* INDEX */
+#video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    align-items: center;
+}
+
+#content-index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#enter-button {
+    padding: 15px 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#enter-button img {
+    opacity: 0.5;
+    transition: transform 4s;
+}
+
+#enter-button:hover img {
+    transform: scale(1.6);
+}
+
+/* Contactos */
+.game-container {
+    width: 200px;
+    height: 200px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-container a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    animation: blink 4s infinite;
+}
+
+.button-container a:hover {
+    background-color: #0056b3;
+}
+
+/* Jogo do Galo */
+.container {
+    margin-top: 100px;
+}
+
+.regras {
+    margin-bottom: 20px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+    background-color: #f1f1f1;
+}
+
+.message {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.reset-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
